@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100vh;
+            margin: 20px;
+            display: grid;
+            gap: 15px;
+            grid-template-rows: 1fr 1fr ;
+            grid-template-columns: 1fr 1fr 1fr .10fr 1fr;
+            grid-template-areas: 
+            "box1 box2 box3 sp box4"
+            "box5 box6 box7 sp box8" 
+            ;
+
+        }
+        .box{
+            border: 2px solid blue;
+        }
+
+        #box-1{
+            grid-area: box1;
+        }  
+        #box-2{
+            grid-area: box2;
+        }  
+        #box-3{
+            grid-area: box3;
+        }  
+        #box-4{
+            grid-area: box4;
+            background-color:rgb(34, 158, 34);
+            border: 2px solid black;
+        }  
+        #box-5{
+            grid-area: box5;
+        }  
+        #box-6{
+            grid-area: box6;
+            background-color: skyblue;
+            border: 2px solid black;
+        }  
+        #box-7{
+            grid-area: box7;
+        }  
+        #box-8{
+            grid-area: box8;
+        }
+        .space{
+            grid-area: sp;
+            border: .1px solid transparent;
+        }
+        #box-1{
+            border: none;
+        }
+        .container1{
+            height: 100%;
+            gap: 5px;
+            display: flex;
+            flex-direction: column;
+
+        }
+        #new-1{
+            height: 50%;
+            border: 2px solid black;
+            background-color: skyblue;
+        }
+        #new-2{
+            height: 50%;
+            border: 2px solid black;
+            background-color:rgb(184, 29, 184);
+            
+        }
+    
+        #box-2{
+            border: none;
+        }
+        
+        .container2{
+            height: 100%;
+            gap: 5px;
+            display: flex;
+            flex-direction: column;
+
+        }
+        #newa-1{
+            height: 50%;
+            border: 2px solid black;
+            background-color:rgb(184, 29, 184);
+        }
+        #newa-2{
+            height: 50%;
+            border: 2px solid black;
+            background-color:rgb(34, 158, 34);
+        }
+        #box-3{
+            border: none;
+        }
+        
+        .container3{
+            height: 100%;
+            gap: 5px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            " newb1 newb2 "
+            " newb3 newb4 "
+            ;
+
+        }
+        #newb-1{
+            background-color: skyblue;;
+            border: 2px solid black;
+            grid-area:newb1;
+        }
+        #newb-2{
+            
+            border: 2px solid black;
+            grid-area:newb2;
+
+        }
+        #newb-3{
+            
+            border: 2px solid black;
+            grid-area:newb3;
+            background-color:rgba(233, 90, 34, 0.979);
+            
+        }
+        #newb-4{
+            
+            border: 2px solid black;
+            grid-area:newb4;
+            background-color:rgb(0, 0, 255);
+
+
+        }
+
+        #newb-2{
+            border: none;
+        }
+        
+        .container3a{
+            height: 100%;
+            gap: 5px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            " new3a1 new3a2 "
+            " new3a3 new3a4 "
+            ;
+
+        }
+        #box3a-1{
+            
+            border: 2px solid black;
+            grid-area:new3a1;
+            background-color:rgb(223, 16, 61);
+        }
+        #box3a-2{
+            
+            border: 2px solid black;
+            grid-area:new3a2;
+            background-color:rgba(233, 90, 34, 0.979);
+
+        }
+        #box3a-3{
+            
+            border: 2px solid black;
+            grid-area:new3a3;
+            background-color:rgb(34, 158, 34);
+        }
+        #box3a-4{
+            
+            border: 2px solid black;
+            grid-area:new3a4;
+            background-color: rgb(146, 16, 163);
+        }
+        
+        #box-5{
+            border: none;
+        }
+        
+        .container5{
+            height: 100%;
+            gap: 5px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            " box51 box52 "
+            " box53 box54 "
+            ;
+
+        }
+        #box5a-1{
+            
+            border: 2px solid black;
+            grid-area:box51;
+            background-color:rgba(233, 90, 34, 0.979);
+        }
+        #box5a-2{
+            
+            border: 2px solid black;
+            grid-area:box52;
+            background-color: rgba(151, 182, 194, 0.801);
+
+        }
+        #box5a-3{
+            
+            border: 2px solid black;
+            grid-area:box53;
+            background-color: rgb(243, 247, 19);
+        }
+        #box5a-4{
+            
+            border: 2px solid black;
+            grid-area:box54;
+        }
+         
+ #box5a-4{
+    border: none;
+}
+
+.container5b{
+
+    height: 100%;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    " box541 box542 "
+    " box543 box544 "
+    ;
+
+}
+#box54-1{
+    
+    border: 2px solid black;
+    grid-area:box541;
+    background-color:rgb(0, 0, 255);
+}
+#box54-2{
+    
+    border: 2px solid black;
+    grid-area:box542;
+    background-color:rgb(184, 29, 184);
+
+}
+#box54-3{
+    
+    border: 2px solid black;
+    grid-area:box543;
+    background-color: grey;
+}
+#box54-4{
+    
+    border: 2px solid black;
+    grid-area:box544;
+    background-color:rgb(0, 0, 255);
+}
+#box-7{
+    border: none;
+}
+.container7{
+    height: 100%;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    " sb71 sb72 "
+    " sb73 sb73 "
+    ;
+
+}
+#box7-1{
+    
+    border: 2px solid black;
+    grid-area:sb71;
+    background-color: rgba(10, 98, 133, 0.603);
+}
+#box7-2{
+    
+    border: 2px solid black;
+    grid-area:sb72;
+    background-color: rgb(146, 16, 163);
+
+}
+#box7-3{
+    
+    border: 2px solid black;
+    grid-area:sb73;
+    background-color:rgb(223, 16, 61);
+}
+#box-8{
+    border: none;
+}       
+.container8{
+    height: 100%;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "sb81 sb82"
+    "sb83 sb84"
+    ;
+
+}
+.box8a{ 
+    border: 2px solid black ;
+
+}
+#box8a-1{
+    grid-area: sb81;
+    background-color:rgba(233, 90, 34, 0.979);
+}
+#box8a-2{
+    grid-area: sb82;
+    background-color: rgb(39, 138, 177);
+}
+#box8a-3{
+    grid-area: sb83;
+    background-color: rgb(146, 16, 163);
+}
+#box8a-4{
+    grid-area: sb84;
+    background-color:rgb(223, 16, 61);
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">
+            <div class="container1">
+                <div class="new" id="new-1"></div>
+                <div class="new" id="new-2"></div>
+            </div>
+        </div>
+        <div class="box" id="box-2">
+            <div class="container2">
+                <div class="newa" id="newa-1"></div>
+                <div class="newa" id="newa-2"></div>
+            </div>
+
+        </div>
+        <div class="box" id="box-3">
+            <div class="container3">
+                <div class="newb" id="newb-1"></div>
+                <div class="newb" id="newb-2">
+                    <div class="container3a">
+                        <div class="box3a" id="box3a-1"></div>
+                        <div class="box3a" id="box3a-2"></div>
+                        <div class="box3a" id="box3a-3"></div>
+                        <div class="box3a" id="box3a-4"></div>
+                    </div>
+                </div>
+                <div class="newb" id="newb-3"></div>
+                <div class="newb" id="newb-4"></div>
+            </div>
+        </div>
+        <div class="box" id="box-4"></div>
+        <div class="box" id="box-5">
+                    <div class="container5">
+                        <div class="box5a" id="box5a-1"></div>
+                        <div class="box5a" id="box5a-2"></div>
+                        <div class="box5a" id="box5a-3"></div>
+                        <div class="box5a" id="box5a-4">
+                            <div class="container5b">
+                                <div class="box5b" id="box54-1"></div>
+                                <div class="box5b" id="box54-2"></div>
+                                <div class="box5b" id="box54-3"></div>
+                                <div class="box5b" id="box54-4"></div>
+                            </div>
+
+                        </div>
+                    </div>
+            
+        </div>
+        <div class="box" id="box-6"></div>
+        <div class="box" id="box-7">
+            <div class="container7">
+                <div class="box7" id="box7-1"></div>
+                <div class="box7" id="box7-2"></div>
+                <div class="box7" id="box7-3"></div>
+            </div>
+        </div>
+        <div class="box" id="box-8">
+            <div class="container8">
+                <div class="box8a" id="box8a-1"></div>
+                <div class="box8a" id="box8a-2"></div>
+                <div class="box8a" id="box8a-3"></div>
+                <div class="box8a" id="box8a-4"></div>
+            </div>
+
+        </div>
+        <div class="space" id="box-9"></div>
+    </div>
+    
+</body>
+</html>

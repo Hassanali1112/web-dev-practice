@@ -1,0 +1,6 @@
+.no1{
+    border: 1px solid black;
+    width: 150px;
+    height: 40px;
+    overflow:auto;
+}

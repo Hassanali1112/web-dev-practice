@@ -1,0 +1,21 @@
+table,tr,th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+td{
+    text-transform: capitalize;
+    padding: 3px;
+    text-align: justify;
+    padding-left: 2px;
+}
+th{
+    background-color: rgba(17, 180, 131, 0.795);
+    text-transform: capitalize;
+}
+tr{
+    background-color: rgba(13, 55, 102, 0.548);
+}
+table{
+
+    margin: 70px 70px;
+}
