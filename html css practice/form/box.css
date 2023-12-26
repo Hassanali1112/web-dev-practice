@@ -4,6 +4,7 @@
     
 }
 .container{
+
     height: 100vh;
     display: grid;
     gap: 15px;
@@ -23,7 +24,7 @@
 .box{
 
     border: 2px solid red;
-
+    
 
 }
 #box-1{

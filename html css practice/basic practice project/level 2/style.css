@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    color:white;
+}
+.my-div{
+    height:100px;
+    width:100px;
+    background-color:green;
+    border:3px solid red;
+    border-radius: 50%;
+    margin:auto;
+}
+.navbar{
+    
+    margin: auto;
+    height:60px;
+    background-color:#0f1111;
+    
+    
+}
+a{
+    text-decoration:none;
+    margin-right:200px;
+    margin-left:auto;
+}
+.logo{
+    font-size:25px;
+    color:#f08804;
+}
+.btn{
+    background-color:#f08804;
+}

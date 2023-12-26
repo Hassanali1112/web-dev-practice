@@ -1,0 +1,50 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    color:white;
+}
+.navbar{
+    background-color:gray;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style-type: none;
+}
+ul{
+    height:60px;
+}
+a:hover{
+    color:green;
+}
+.hero{
+    text-transform: capitalize;
+    text-align:center;
+    background-color:skyblue;
+}
+.outer-div{    
+    height:500px;
+    width:500px;
+    border:2px solid blue;    
+    margin:20px auto;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    background-image: url(learn.jpg);
+    background-size:cover;
+
+
+}
+.inner-div{
+    height:100px;
+    width:100px;
+    border:2px solid yellow;
+    align-self: center;
+    background-image:url(myimg1.jpg);
+    background-size:cover;
+}

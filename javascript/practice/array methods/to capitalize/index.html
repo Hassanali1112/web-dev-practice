@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    
+    <script>
+        alert("enter 3 cities name in any case(upper/lower/camel) i will convert them in capitalize case")
+        var cities = [prompt('enter array elements cities name'),prompt('enter array elements cities name'),prompt('enter array elements cities name')]
+    // var cities = ["kaRachi","islAmabad","laHore"];
+    for(i=0; i<cities.length; i++){
+        var x = cities[i].toLowerCase();
+        // document.write(x +"<br>")
+        var y =x.slice(0,1).toUpperCase() + x.slice(1);
+        document.write(y +"<br>")
+    }
+
+    </script>
+</body>
+</html>

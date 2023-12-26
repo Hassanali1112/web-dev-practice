@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom practice</title>
+    <style>
+        div{
+            width:200px;
+            height:300px;
+            border:2px solid black;
+            padding:10px;
+        }
+        video{
+            width:100%;
+            height:50%;
+        }
+    </style>
+</head>
+<body>
+    <main id="container">
+
+    </main>
+    <script> 
+    let cont = document.getElementById("container");
+    var array=[ 
+        {
+            name:"hassan ali",
+            dis:"web developer",
+            src:"video/1.mp4",
+        },{
+            name:"ali",
+            dis:"chemist",
+            src:"video/2.mp4", 
+        }]
+        for(i=0; i<array.length; i++){
+            let div = document.createElement("div");
+            cont.appendChild(div);
+            let vid = document.createElement("video");
+            vid.src=array[i].src;
+            div.appendChild(vid);
+            let name = document.createElement("h2");
+            name.innerHTML = array[i].name;
+            div.appendChild(name);
+            let dis = document.createElement("p");
+            dis.innerHTML = array[i].dis;
+            div.appendChild(dis);
+        }
+    </script>
+</body>
+</html>

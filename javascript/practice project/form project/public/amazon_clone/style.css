@@ -1,0 +1,268 @@
+*{
+    border:border-box;
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.navbar{
+    height:60px;
+    background-color: #0f1111;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.nav-logo{
+    height:50px;
+    width:120px;
+}
+.logo{
+    background-image:url(amazon_logo.jpg);
+    background-size:cover;
+    height:50px;
+    width:120px;
+}
+.border{
+    border:2px solid transparent;
+}
+.border:hover{
+    border:2px solid white;
+}
+/* nav-address */
+.address-first{
+    color:#cccccc;
+    font-size:0.85rem;
+    margin-left:20px;
+}
+.address-second{
+    font-size:1rem;
+    margin-left:3px;
+}
+.address-icon{
+    display:flex;
+    align-items:center;
+}
+.nav-address{
+    padding:5px;
+}
+        /* nav-search */
+.nav-search{
+    display:flex;
+    justify-content:space-evenly;
+    background-color:grey;
+    margin:0 5px;
+    width:620px;
+    height:40px;
+    border-radius:4px;
+}
+.Search-select{
+    background-color:#f3f3f3;
+    width:50px;
+    padding:5px;
+    text-align:center;
+    border-top-left-radius:4px;
+    border-bottom-left-radius:4px;
+    border:none;
+}
+.nav-search:hover{
+    border:2px solid orange;
+}
+.nav-input{
+    width:100%;
+    font-size:1rem;
+    border:none;
+}
+.search-icon{
+    width:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.2rem;
+    background-color:#febd68;
+    border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+    color:#0f1111;
+}
+    /* nav-signin */
+    .nav-first{
+        font-size:0.7rem;
+        font-weight:900px;  
+    }
+    .nav-second{
+        font-size:0.85rem;
+        font-weight:700;
+    }
+    .nav-signin{
+        padding:5px;
+    }
+    .nav-return{
+        padding:5px;
+    }
+    .nav-cart i {
+        font-size: 1.7rem;
+    }
+    .nav-cart{
+        font-size:0.85rem;
+        font-weight:700;
+    }
+            /* navbar-second */
+    .nav-panel{
+        height:40px;
+        background-color:#232F3E;
+        display:flex;
+        coloR:white;
+        align-items:center;
+        justify-content:space-evenly;  
+    }
+    .panel-opp p {
+        display: inline;
+        margin:15px;
+        font-size:0.85rem;
+        padding:10px;
+    }
+    .panel-menu{
+        width:auto;
+        font-size:0.9rem;
+        font-weight:700;
+        padding:10px;  
+    }
+    .panel-deal{
+        width:auto;
+        font-size:0.9rem;
+        font-weight:700;
+    }
+    .panel-opp{
+        width:80%;
+    }
+    .panel-deal p{
+        padding: 7px;
+    }
+        /* hero-section */
+.hero-section{
+    background-image:url(hero_img.jpg);
+    height:350px;
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+}
+.hero-msg{
+    background-color:white;
+    color:black;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:0.85rem;
+    width:80%;
+    margin-bottom:25px;
+}
+.hero-msg a{
+    color:#007185;
+}
+                        /* SHOP_SECTION */
+.box{
+    height: 400px;
+    width:22%;
+    margin-top:15px;
+    background-color:#ffffff;
+    margin-bottom: 15px;
+}     
+.shop-section{
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    background-color:rgba(32, 178, 171, 0.21);
+    padding-bottom:20px;
+}                 
+.box-img{
+    height:270px;
+    background-size:cover;
+    padding:20px 0 15px;
+    margin:10px 0; 
+}
+.box-content{
+    margin:20px;
+    margin-bottom:30px;  
+} 
+.box-content a:hover{
+    color:red;
+}
+                /* signin-section */
+.signin-section{
+    height:160px;
+    background-color:#FFFFFF;
+}
+.signin-border{
+    margin:40px 0;
+    height:140px;
+    border-top:0.2px solid rgba(0, 0, 0, 0.255);
+    border-bottom:0.2px solid rgba(0, 0, 0, 0.255);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
+.signin-section button{
+    background-color:#FFC636;
+    width:230px;
+    height:28px;
+    font-size:0.85rem;
+    font-weight:600;
+    border:1px solid #b18619;
+    border-radius:4px;
+    color:#000;
+    margin:5px 0;
+}
+.signin-para1 p, .signin-para2 {
+    font-size:0.80rem;
+}
+.signin-para2 a{
+    text-decoration:none;
+    color:#007185;
+    font-size:0.8rem;
+}
+.signin-para2{
+    padding-left:40px;
+}
+.signin-para1{
+    padding-left:10px;
+}
+                /* <!-- FOOTER_SECTION --> */
+.foot-panel1{
+    height:50px;
+    background-color:#0f1111de;
+    color:white;
+    text-align:center;
+    line-height:50px;
+}            
+.foot-panel1 p{
+    font-size:0.90rem;
+}
+.foot-panel2{
+    padding-top:40px;
+    height:320px;
+    background-color:#222f34;
+    display:flex;
+    color: white;
+    justify-content:space-evenly;
+}
+.foot-panel2 li{
+    margin-top:10px;
+    list-style-type: none;
+    color:#ddd;
+}
+.foot-panel3{
+    border-top:0.1px solid white;
+    background-color:#222f34;
+    height:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.foot-panel4{
+    height:40px;
+    background-color:#222f34;
+    color:white;
+    text-align:center;
+}

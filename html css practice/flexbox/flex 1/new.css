@@ -1,0 +1,31 @@
+.text{
+    text-align: center;
+    padding-left: 10px;
+}
+p{
+    text-align: center;
+}
+.price{
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    color: aquamarine;
+}
+<div class="card-body">
+<div><p class="card-tittle">Primium</p></div>
+<div><p class="card-subtittle"><p>VIP-card</p></div>
+<div class="price">$65</div>
+<div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+
+
+#card-1{
+    margin-top: 20px;
+}
+#card-3{
+    margin-top: 20px;
+}#card-4{
+    margin-top: 20px;
+}#card-6{
+    margin-top: 20px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+function chechStr(){
+   var GD = document.getElementById("test").value;
+   
+   if(GD.length==0){
+    return true;
+   } else{
+    return false;
+   }
+
+}
+ var result = document.getElementById("res").innerText = checkStr();
+</script>
+<body>
+    <input type="number" id="test" step="any" />
+    <button onclick="chechStr()"> check</button>
+    <h2 id="res"></h2>
+    
+</body>
+</html>

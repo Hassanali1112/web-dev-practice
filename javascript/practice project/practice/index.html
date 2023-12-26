@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        height:300px;
+        width:200px;
+        border:2px solid black;
+        text-align: center;
+        padding:10px
+    }
+    .container{
+
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 10px;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        width:100%;
+        height:50%
+    }
+</style>
+<body>
+    <section class="container" id="container">
+    </section>
+<script>
+    var container = document.getElementById("container");
+    var card = [{
+        name:"hassan ali",
+        dis:"web develpor",
+        url:"/img/2.jpg"
+     
+    },{ 
+        name:"Abdul Rehman",
+        dis:"chemist",
+        url:"/img/1.jpg" 
+    },{
+        name:"Faizan",
+        dis:"Engineer",
+        url:"/img/3.jpg"
+        },{
+        name:"hassan ali",
+        dis:"web develpor",
+        url:"/img/4.jpg"
+        }];
+        
+
+    for(let i=0; i<card.length; i++){
+        let div = document.createElement("div");
+        container.appendChild(div);
+        let img = document.createElement("img")
+        img.src=card[i].url;
+        div.appendChild(img);
+        let name = document.createElement("h2");
+        name.innerText= card[i].name;
+        div.appendChild(name);
+        let dis = document.createElement("h5");
+        dis.innerText= card[i].dis;
+        div.appendChild(dis);        
+    }
+</script>
+</body>
+</html>

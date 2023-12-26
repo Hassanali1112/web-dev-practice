@@ -1,0 +1,42 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+ .transition{
+    height:100px;
+    width:100px;
+    background-color:grey;
+    border:2px solid yellowgreen;
+    margin:auto;
+    transform: rotate (45deg);
+ }
+    
+     /*  transition-property:all;
+     transition-duration:2s;
+    transition-timing-function: linear; 
+    transition-delay: 3s; 
+     transition:all 4s steps(5) 2s;
+    
+}
+div:hover{
+    background-color:navajowhite;
+    color:darkslategrey;
+    width:300px;
+    height:300px;
+}
+.transition:active{
+    background-color:forestgreen;
+    color:honeydew;
+    width:400px;
+    height:400px;
+} */
+.transition:hover{
+    /* margin-top:100px; */
+    transform:scale(2,2);
+    transform:rotate(90deg);
+    transform:translate(50px,100px);
+    transform:skew(80deg);
+
+
+}

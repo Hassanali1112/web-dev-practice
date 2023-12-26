@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-outer{
+    width: 100;
+    
+}
+.container-inner{
+    width: 500px;
+    margin: 20px auto;
+    padding: 15px 15px;
+}
+.sec-one{
+    border: .1px solid black;
+    border-top: 8px solid black;
+    padding: 20px 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    line-height: 33px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 15px;
+}
+.sec-one-panel{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.sec-panel1{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.mute{
+    font-weight: 200;
+}
+.para1{
+    font-size: 12px;
+}
+.sec{
+    border-top: 1px solid;
+}

@@ -1,0 +1,31 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+.my-class{
+    margin-left:10px;
+    float: right;
+    background-color: #bf1400 ;
+    width: 100%;
+    padding: 5px 10px;
+   align-content: end !important;
+   margin-right: 30px;
+   flex-direction: row-reverse;
+   
+
+}
+.nav-2{
+    font-size: .80rem;
+    display: flex;
+    
+}
+.navbar-brand{
+    font: 30px;
+    width: 33%;
+    padding-left: 100px;
+}
+.collapse{
+    width: 33% !important;
+    font-size: 13px !important;
+}

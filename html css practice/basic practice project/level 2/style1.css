@@ -1,0 +1,50 @@
+*{
+    box-sizing:border-box;
+    padding: 0;
+    margin:0;
+    color:white;
+}
+.nav{
+    height:60px;
+    background-color:#0f1111;
+}
+a{
+    text-decoration:none;
+    margin-right:200px;
+}
+.brand{
+    font-size:25px;
+    color:#f08804;
+}
+button{
+    background-color:#f08804;
+}
+a:hover{
+    color:rgba(0, 255, 0, 1);
+}
+button:hover{
+    color:rgb(0,0,255);
+    background-color:white;
+}
+.content{
+    display:inline-block;
+    height:100%;
+    width:33%;
+    background-color:yellow ;
+    
+
+}
+.my-footer{
+    height:100px;
+    background-color: #0f1111;
+    text-align:center;
+    line-height:40px;
+    
+}
+main{
+    height:80vh;
+    margin:10px;
+}
+header{
+    line-height:50px;
+}
