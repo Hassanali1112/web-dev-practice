@@ -1,3 +1,38 @@
+// Async Await 
+
+// function api() {
+//     return new Promise ( (resolve, reject) =>{
+//         setTimeout(()=>{
+//             console.log("weather data")
+//             resolve(200)
+//         },3000)
+       
+//     })
+// }
+// async function getWeatherData(){
+//     await api();
+//     await api();
+//     await api();
+// }
+
+function getData(dataId){
+        return new Promise((resolve, reject) => {
+            console.log(`getting data : ${dataId}`)
+            setTimeout(()=>{
+                console.log('data', dataId)
+                resolve('success')
+            },2000)
+        })
+    }
+
+async function Data(){
+    await getData(1)
+    await getData(2)
+    await getData(3)
+    await getData(4)
+    await getData(5)
+}
+ 
 
 // Promise chaining / Promise chain
 // function data1 (){
