@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html body {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+}
+/* navbar css */
+nav {
+  height: 80px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 2px;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+  text-transform: capitalize;
+}
+.links li {
+  list-style: none;
+  font-size: 1.1rem;
+}
+.links .menubtn {
+  display: none;
+}
+
+.hero-section {
+  height: calc(100% - 80px);
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  background: yellow;
+}
+.hero-section .left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  background: red;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.left h1 {
+  font-size: 3vw;
+}
+.left p {
+  font-size: 1.2vw;
+  color: rgb(44, 41, 41);
+}
+.left button {
+  min-width: 120px;
+  width: fit-content;
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  background: teal;
+}
+.hero-section .right {
+  width: 50%;
+  height: 100%;
+  background: blue;
+}
+.right img {
+  width: 100%;
+  height: 100%;
+  size-adjust: fit-content;
+}
+/* media queries */
+@media (max-width: 600px) {
+  nav {
+    /* background-color: lightseagreen; */
+  }
+  .links li {
+    display: none;
+  }
+  .links .menubtn {
+    display: block;
+  }
+  .hero-section {
+    background: #000;
+    flex-direction: column;
+    height: calc(100% - 80px);
+  }
+  .hero-section .left {
+    /* background-color: green; */
+    padding-top: 30px;
+    width: 100%;
+    height: 50%;
+    /* gap: 10px; */
+  }
+  .left h1 {
+    font-size: 6vw;
+    line-height: 50%;
+  }
+  .left p {
+    font-size: 4vw;
+    line-height: 1.3;
+  }
+  .hero-section .right {
+    background-color: yellow;
+    width: 100%;
+    height: 50%;
+  }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  nav {
+    background: yellow;
+  }
+  nav .logo {
+    font-size: 4vw;
+  }
+  nav .links li {
+    font-size: 3vw;
+  }
+  .hero-section .left {
+    justify-content: space-around;
+  }
+  .hero-section .left h1 {
+    font-size: 3.9vw;
+  }
+  .left p {
+    font-size: 2.8vw;
+  }
+}
