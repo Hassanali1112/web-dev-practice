@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100;
+  width: 100%;
+  font-family: "Roboto";
+  margin-bottom: 30px;
+}
+.main {
+  /* height: 90vh;
+  width: 90vw; */
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main hr{
+    height: 5px;
+    background-color: orangered;
+}
+.container {
+  width: 70vw;
+  height: 90vh;
+  background: #dbd7d7;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 60px;
+  padding-bottom: 20px;
+}
+.innercontainer {
+  width: 60vw;
+  height: 65vh;
+  background: white;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 8px;
+}
+nav {
+  width: 100%;
+  height: 50px;
+  /* background: #922020; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu h4 {
+  border: 1px solid black;
+  padding: 5px 12px;
+  text-transform: capitalize;
+  font-weight: 400;
+  border-radius: 30px 30px;
+}
+.menu p {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  padding: 5px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.brand .logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 68, 0, 0.805);
+}
+.brand h2 {
+  text-transform: uppercase;
+}
+.auth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.auth > .login{
+    padding: 5px 8px;
+    min-width: 80px;
+    width: fit-content ;
+    text-transform: capitalize;
+     font-size: 13px;
+    font-weight: 500;
+    border-radius: 30px;
+   border: 1px solid black;
+}
+.auth > .signup{
+    padding: 5px 8px;
+    min-width: 80px;
+    width: fit-content ;
+    text-transform: capitalize;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 30px;
+   border: 1px solid black;
+    background-color: rgba(255, 68, 0, 0.805);
+    color: white;
+}
