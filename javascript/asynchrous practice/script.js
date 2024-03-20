@@ -15,23 +15,23 @@
 //     await api();
 // }
 
-function getData(dataId){
-        return new Promise((resolve, reject) => {
-            console.log(`getting data : ${dataId}`)
-            setTimeout(()=>{
-                console.log('data', dataId)
-                resolve('success')
-            },2000)
-        })
-    }
+// function getData(dataId){
+//         return new Promise((resolve, reject) => {
+//             console.log(`getting data : ${dataId}`)
+//             setTimeout(()=>{
+//                 console.log('data', dataId)
+//                 resolve('success')
+//             },2000)
+//         })
+//     }
 
-async function Data(){
-    await getData(1)
-    await getData(2)
-    await getData(3)
-    await getData(4)
-    await getData(5)
-}
+// async function Data(){
+//     await getData(1)
+//     await getData(2)
+//     await getData(3)
+//     await getData(4)
+//     await getData(5)
+// }
  
 
 // Promise chaining / Promise chain
@@ -146,3 +146,31 @@ async function Data(){
 // })
 
 
+
+// function data(data, nextData){
+//     console.log("fetching data...", data)
+  
+//     setTimeout(()=>{
+//         console.log(data)
+//     },3000)
+//      if (nextData) {
+//        nextData();
+//      }
+// }
+
+// data(1,()=>{
+//     data(2,()=>{
+//         data(3,()=>{
+//             data(4,()=>{
+//                 data(5)
+//             })
+//         })
+//     })
+// })
+
+const arr = [1,2,3,4,5,6]
+const newArr = []
+for(i=0; i<arr.length-1; i++){
+    newArr.push([arr[i],arr[i+1]])
+}
+console.log(newArr)

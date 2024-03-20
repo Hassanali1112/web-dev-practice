@@ -130,3 +130,4 @@ function handleSearh() {
 
 showTheCards();
 handleSearh();
+document.querySelector("body").innerHTML = "hello world"
