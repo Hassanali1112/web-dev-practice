@@ -1,0 +1,19 @@
+body[theme="black"]{
+    background-color: black;
+}
+body[theme="black"] .section{
+    color: white;
+}
+ 
+body[theme="cyan"]{
+    background-color: cyan;
+}
+body[theme="salmon"]{
+    background-color: salmon;
+}
+body[theme="white"]{
+    background-color: white;
+}
+.body{
+        font-family: Pp Neue Machina;
+}

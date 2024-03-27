@@ -1,0 +1,32 @@
+.class{
+    background-color: yellow;
+}
+#id{
+    background-color: red;
+}
+.pseudoclass:hover{
+    background-color: orange;
+    font-size: 5rem;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
+.peudoelem::first-letter{
+    background-color: red;
+    font-size: 3rem ;
+}
+li[color="blue"]{
+    background-color: blue;
+}
+ol>li.child{
+    background-color: green;
+}
+.main li.decendent{
+    background-color: purple;
+}
+li.decendent+li{
+    background-color: brown;
+}
+li.class ~ li.general{
+    background-color: rebeccapurple;
+}
